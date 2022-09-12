@@ -19,7 +19,7 @@
          
         try {
             //atribui a variavel $conexao os parametros com o bd(PDO)
-            self:: $conexao = new PDO ("$db_driver:host:$db_host; dbname=$db_nome", $db_usuario,$db_senha);
+            self:: $conexao = new PDO ("$db_driver:host=$db_host; dbname=$db_nome", $db_usuario,$db_senha);
             //atribui as execoes de tratamento de error se tiver
             self:: $conexao ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             //garantir que os dados com acentuaçoes sejam armazenados sem erro
