@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastrar novo usuario</title>
+</head>
+<body>
+    <h2>NOVO CADASTRO<h/2>
+    <fieldset>
+        <legend>insira os dados:</legend>
+        <form action="../../controller/usuariocontroller.php" method="post" name="cad">
+            <label>nome:</label>
+            <input type="text" name="nome" id="nome" required/><br><br>
+            <label>email:</label>
+            <input type="email" name="mail" id="mail" required/><br><br>
+            <label>C.P.F:</label>
+            <input type="text" name="cpf" id="cpf" required/><br><br>
+            <label>tel:</label>
+            <input type="tel" name="telefone" id="telefone" required/><br><br>
+            <label>sexo:</label>
+            <select id = "sexo" name="sexo">
+                <option value="" selected="selected">-----SELECIONE-----</option>
+                <option value="M">masculino</option>
+                <option value = "F">feminino</option>
+                <option value = "O">outro</option>
+            </select><br><br>
+            <label>senha:</label>
+            <input type="password" name="senha" id="senha" required/><br><br>
+            <input type="submit" name="cadastrar" id="cadastrar" value="CADASTRO">
+            <button><a href="../../index.php" style="text-decoration:none;">VOLTAR</a></button>
+
+        </form>
+
+
+    </fieldset>
+</body>
+</html>
